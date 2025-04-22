@@ -1,9 +1,9 @@
 import React from 'react';
 import './TransactionHistory.module.css';
 
-const TransactionHistory = ({
+export default function TransactionHistory({
   items,
-}) => {
+}) {
   return (
     <table>
       <thead>
@@ -24,6 +24,4 @@ const TransactionHistory = ({
       </tbody>
     </table>
   );
-};
-
-export default TransactionHistory;
+}
