@@ -1,5 +1,5 @@
 import React from 'react';
-import './TransactionHistory.module.css';
+import style from './TransactionHistory.module.css';
 
 export default function TransactionHistory({
   items,
