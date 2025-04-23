@@ -1,21 +1,21 @@
-table {
+.table {
   width: 100%;
   border-collapse: collapse;
 }
 
-th,
-td {
+.th,
+.td {
   padding: 8px;
   border: 1px solid #ddd;
   text-align: left;
   color: #000000;
 }
 
-th {
+.th {
   background-color: #f2f2f2;
   color: #000000;
 }
 
-tr:nth-child(even) {
+.tr:nth-child(even) {
   background-color: #f9f9f9;
 }
