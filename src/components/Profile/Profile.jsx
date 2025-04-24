@@ -1,32 +1,14 @@
 import React from 'react';
 import styles from './Profile.module.css';
 
-export default function Profile({
-  name,
-  tag,
-  location,
-  image,
-  stats,
-}) {
+export default function Profile({ name, tag, location, image, stats }) {
   return (
     <div className={styles.profile}>
-      <div
-        className={styles.profileHeader}
-      >
-        <img
-          src={image}
-          alt="User avatar"
-          className={styles.avatar}
-        />
-        <h3 className={styles.name}>
-          Jacques Gluke
-        </h3>
-        <p className={styles.tag}>
-          @jgluke
-        </p>
-        <p className={styles.location}>
-          Ocho Rios, Jamaica
-        </p>
+      <div className={styles.profileHeader}>
+        <img src={image} alt="User avatar" className={styles.avatar} />
+        <h3 className={styles.name}>{name}</h3>
+        <p className={styles.tag}>@{tag}</p>
+        <p className={styles.location}>{location}</p>
       </div>
 
       <ul className={styles.stats}>
